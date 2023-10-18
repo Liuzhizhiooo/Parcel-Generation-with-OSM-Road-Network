@@ -4,7 +4,7 @@
 
 本代码链接：[利用OSM路网生成地块](https://github.com/Liuzhizhiooo/Parcel-Generation-with-OSM-Road-Network)
 
-十分感谢kingsley0107公开的代码：https://github.com/kingsley0107/road_regularization，
+十分感谢kingsley0107公开的代码：https://github.com/kingsley0107/road_regularization
 
 和上述项目的区别如下：
 
