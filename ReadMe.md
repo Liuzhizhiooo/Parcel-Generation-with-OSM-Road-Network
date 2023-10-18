@@ -22,7 +22,7 @@
 
 下载的是2013-10-10的数据
 
-<img src="ReadMe.assets/image-20231013142531085.png" alt="image-20231013142531085" style="zoom: 33%;" />
+<img src="ReadMe.assets/image-20231013142531085.png" alt="image-20231013142531085" width=300/>
 
 
 
@@ -75,7 +75,7 @@ conda create -n arcgispro --clone D:\software\ArcgisPro\bin\Python\envs\arcgispr
 
 得到`osm_hangzhou.shp`
 
-<img src="ReadMe.assets/image-20231013145330854.png" alt="image-20231013145330854" style="zoom:33%;" />
+<img src="ReadMe.assets/image-20231013145330854.png" alt="image-20231013145330854" width=400/>
 
 对`osm_hangzhou.shp`应用如下过滤规，导出为`osm_hangzhou-select.shp`并进行展示：
 
@@ -94,8 +94,7 @@ conda create -n arcgispro --clone D:\software\ArcgisPro\bin\Python\envs\arcgispr
 |     tertiary(_link)      |    次干道    |  2   |    20    |
 | residential,unclassified |     支路     |  3   |    10    |
 
-![image-20231013151942562](ReadMe.assets/image-20231013151942562.png)
-
+<img src="ReadMe.assets/image-20231013151942562.png" alt="image-20231013151942562.png" width=600/>
 
 
 ### 2.2 提取中心线
@@ -116,7 +115,7 @@ conda create -n arcgispro --clone D:\software\ArcgisPro\bin\Python\envs\arcgispr
 
 + 提取中心线，`Polygon To Centerline`
 
-<img src="ReadMe.assets/image-20231016132735038.png" alt="image-20231016132735038" style="zoom: 33%;" /><img src="ReadMe.assets/image-20231016132757212.png" alt="image-20231016132757212" style="zoom: 33%;" /><img src="ReadMe.assets/image-20231016132816542.png" alt="image-20231016132816542" style="zoom: 33%;" /><img src="ReadMe.assets/image-20231016132831001.png" alt="image-20231016132831001" style="zoom:33%;" />
+<img src="ReadMe.assets/image-20231016132735038.png" alt="image-20231016132735038" width=180/><img src="ReadMe.assets/image-20231016132757212.png" alt="image-20231016132757212" width=180/><img src="ReadMe.assets/image-20231016132816542.png" alt="image-20231016132816542" width=180/><img src="ReadMe.assets/image-20231016132831001.png" alt="image-20231016132831001" width=180/>
 
 
 
@@ -124,7 +123,7 @@ conda create -n arcgispro --clone D:\software\ArcgisPro\bin\Python\envs\arcgispr
 
 + 非闭合道路延展，`ExtendLine`
 
-<img src="ReadMe.assets/image-20231016133353932.png" alt="image-20231016133353932" style="zoom:33%;" />
+<img src="ReadMe.assets/image-20231016133353932.png" alt="image-20231016133353932" width=180/>
 
 + 提取断头路（悬挂线）的点
 
@@ -132,13 +131,13 @@ conda create -n arcgispro --clone D:\software\ArcgisPro\bin\Python\envs\arcgispr
 
 | 步骤               | 英文                         | 参数                                                         |
 | ------------------ | ---------------------------- | ------------------------------------------------------------ |
-| 创建要素数据集     | `CreateFeatureDataset`       | <img src="ReadMe.assets/image-20231016135945515.png" alt="image-20231016135945515" style="zoom:33%;" /> |
-| 要素类至要素类     | `FeatureClassToFeatureClass` | <img src="ReadMe.assets/image-20231016140236554.png" alt="image-20231016140236554" style="zoom:33%;" /> |
-| 创建拓扑           | `CreateTopology`             | <img src="ReadMe.assets/image-20231016140315734.png" alt="image-20231016140315734" style="zoom:33%;" /> |
-| 向拓扑中添加要素类 | `AddFeatureClassToTopology`  | <img src="ReadMe.assets/image-20231016140417182.png" alt="image-20231016140417182" style="zoom: 33%;" /> |
-| 添加拓扑规则       | `AddRuleToTopology`          | <img src="ReadMe.assets/image-20231016140822631.png" alt="image-20231016140822631" style="zoom:33%;" /> |
-| 拓扑验证           | `ValidateTopology`           | <img src="ReadMe.assets/image-20231016140935591.png" alt="image-20231016140935591" style="zoom:33%;" /> |
-| 导出拓扑错误       | `ExportTopologyErrors`       | <img src="ReadMe.assets/image-20231016142505385.png" alt="image-20231016142505385" style="zoom:33%;" /> |
+| 创建要素数据集     | `CreateFeatureDataset`       | <img src="ReadMe.assets/image-20231016135945515.png" alt="image-20231016135945515" width=180/> |
+| 要素类至要素类     | `FeatureClassToFeatureClass` | <img src="ReadMe.assets/image-20231016140236554.png" alt="image-20231016140236554" width=180/> |
+| 创建拓扑           | `CreateTopology`             | <img src="ReadMe.assets/image-20231016140315734.png" alt="image-20231016140315734" width=180/> |
+| 向拓扑中添加要素类 | `AddFeatureClassToTopology`  | <img src="ReadMe.assets/image-20231016140417182.png" alt="image-20231016140417182" width=180/> |
+| 添加拓扑规则       | `AddRuleToTopology`          | <img src="ReadMe.assets/image-20231016140822631.png" alt="image-20231016140822631" width=180/> |
+| 拓扑验证           | `ValidateTopology`           | <img src="ReadMe.assets/image-20231016140935591.png" alt="image-20231016140935591" width=180/> |
+| 导出拓扑错误       | `ExportTopologyErrors`       | <img src="ReadMe.assets/image-20231016142505385.png" alt="image-20231016142505385" width=180/> |
 
 
 
@@ -146,12 +145,12 @@ conda create -n arcgispro --clone D:\software\ArcgisPro\bin\Python\envs\arcgispr
 
 |                              |                              |                                                              |
 | ---------------------------- | ---------------------------- | ------------------------------------------------------------ |
-| 复制图层                     | `MakeFeatureLayer`           | <img src="ReadMe.assets/image-20231016142925660.png" alt="image-20231016142925660" style="zoom:33%;" /> |
-| 找到与错误拓扑点有交集的线段 | `SelectLayerByLocation`      | <img src="ReadMe.assets/image-20231016143349517.png" alt="image-20231016143349517" style="zoom:33%;" /> |
-| 导出所选线段                 | `CopyFeatures`               | <img src="ReadMe.assets/image-20231016143709484.png" alt="image-20231016143709484" style="zoom:33%;" /> |
-| 计算线段长度                 | `AddGeometryAttributes`      | <img src="ReadMe.assets/image-20231016144608575.png" alt="image-20231016144608575" style="zoom:33%;" /> |
-| 筛选出过短的线段（<500m）    | `FeatureClassToFeatureClass` | <img src="ReadMe.assets/image-20231016145019224.png" alt="image-20231016145019224" style="zoom:33%;" /> |
-| 擦除过短的悬挂线             | `Erase`                      | <img src="ReadMe.assets/image-20231016145411623.png" alt="image-20231016145411623" style="zoom:33%;" /> |
+| 复制图层                     | `MakeFeatureLayer`           | <img src="ReadMe.assets/image-20231016142925660.png" alt="image-20231016142925660" width=180/> |
+| 找到与错误拓扑点有交集的线段 | `SelectLayerByLocation`      | <img src="ReadMe.assets/image-20231016143349517.png" alt="image-20231016143349517" width=180/> |
+| 导出所选线段                 | `CopyFeatures`               | <img src="ReadMe.assets/image-20231016143709484.png" alt="image-20231016143709484" width=180/> |
+| 计算线段长度                 | `AddGeometryAttributes`      | <img src="ReadMe.assets/image-20231016144608575.png" alt="image-20231016144608575" width=180/> |
+| 筛选出过短的线段（<500m）    | `FeatureClassToFeatureClass` | <img src="ReadMe.assets/image-20231016145019224.png" alt="image-20231016145019224" width=180/> |
+| 擦除过短的悬挂线             | `Erase`                      | <img src="ReadMe.assets/image-20231016145411623.png" alt="image-20231016145411623" width=180/> |
 
 
 
@@ -159,21 +158,21 @@ conda create -n arcgispro --clone D:\software\ArcgisPro\bin\Python\envs\arcgispr
 
 |                            |               |                                                              |
 | -------------------------- | ------------- | ------------------------------------------------------------ |
-| 把新生成的线进行缓冲区     | `Buffer`      | <img src="ReadMe.assets/image-20231016150539695.png" alt="image-20231016150539695" style="zoom:33%;" /> |
-| 利用最大重叠区进行一一对应 | `SpatialJoin` | <img src="ReadMe.assets/image-20231016150448874.png" alt="image-20231016150448874" style="zoom:33%;" /> |
-| 利用位于区域内进行对应     | `SpatialJoin` | <img src="ReadMe.assets/image-20231016152020311.png" alt="image-20231016152020311" style="zoom:33%;" /> |
+| 把新生成的线进行缓冲区     | `Buffer`      | <img src="ReadMe.assets/image-20231016150539695.png" alt="image-20231016150539695" width=180/> |
+| 利用最大重叠区进行一一对应 | `SpatialJoin` | <img src="ReadMe.assets/image-20231016150448874.png" alt="image-20231016150448874" width=180/> |
+| 利用位于区域内进行对应     | `SpatialJoin` | <img src="ReadMe.assets/image-20231016152020311.png" alt="image-20231016152020311" width=180/> |
 
 
 
 最终可以得到`道路延伸优化(100m)`,`过短(<500m)悬挂道路筛除`后的路网
 
-<img src="ReadMe.assets/image-20231016155228315.png" alt="image-20231016155228315" style="zoom:50%;" />
+<img src="ReadMe.assets/image-20231016155228315.png" alt="image-20231016155228315" width=300 />
 
 ### 2.4 生成地块
 
 根据类别生成缓冲距离字段，先新建一个字段，然后右击该列计算字段
 
-<img src="ReadMe.assets/image-20231016162736030.png" alt="image-20231016162736030" style="zoom:50%;" />
+<img src="ReadMe.assets/image-20231016162736030.png" alt="image-20231016162736030" width=300 />
 
 ```python
 def getDis(x, y):
@@ -192,11 +191,11 @@ def getDis(x, y):
 
 + 按类生成缓冲区并合并，要素转面，然后删除掉面积最大的那个面（道路面），即可得到`land parcel`
 
-<img src="ReadMe.assets/image-20231016164014551.png" alt="image-20231016164014551" style="zoom:33%;" />
+<img src="ReadMe.assets/image-20231016164014551.png" alt="image-20231016164014551" width=180/>
 
 + 筛除面积过小的数据
 
-<img src="ReadMe.assets/image-20231017212543093.png" alt="image-20231017212543093" style="zoom:33%;" />
+<img src="ReadMe.assets/image-20231017212543093.png" alt="image-20231017212543093" width=180/>
 
 
 
